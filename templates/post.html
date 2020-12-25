@@ -1,5 +1,5 @@
 {%extends 'flatpages/default.html' %}
-{% load custom_filters %}
+
 
 {% block title %}
 Post
@@ -10,6 +10,6 @@ Post
     <h1>Статья</h1>
     {{ post.headline }}<br />
     {{ post.create_time|date:'M d Y h:m' }}<br />
-    {{ post.text|censor }}<br />
+    {{ post.text }}<br />
     {{ post.author }}
 {% endblock content %}
